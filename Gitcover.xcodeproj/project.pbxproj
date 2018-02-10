@@ -15,6 +15,10 @@
 		7DFFC2BE202EAA5500743466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DFFC2BC202EAA5500743466 /* LaunchScreen.storyboard */; };
 		7DFFC2C9202EAA5500743466 /* GitcoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFC2C8202EAA5500743466 /* GitcoverTests.m */; };
 		7DFFC2D4202EAA5500743466 /* GitcoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFC2D3202EAA5500743466 /* GitcoverUITests.m */; };
+		7DFFC2E5202EB8F300743466 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFC2E3202EB8F300743466 /* PhotoViewController.m */; };
+		7DFFC2E6202EB8F300743466 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DFFC2E4202EB8F300743466 /* PhotoViewController.xib */; };
+		7DFFC2EC202EB97200743466 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFC2EA202EB97200743466 /* MineTableViewController.m */; };
+		7DFFC2ED202EB97200743466 /* MineTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DFFC2EB202EB97200743466 /* MineTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		7DFFC2CF202EAA5500743466 /* GitcoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitcoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DFFC2D3202EAA5500743466 /* GitcoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitcoverUITests.m; sourceTree = "<group>"; };
 		7DFFC2D5202EAA5500743466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFFC2E1202EB8C600743466 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		7DFFC2E2202EB8F300743466 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		7DFFC2E3202EB8F300743466 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		7DFFC2E4202EB8F300743466 /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		7DFFC2E9202EB97200743466 /* MineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewController.h; sourceTree = "<group>"; };
+		7DFFC2EA202EB97200743466 /* MineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewController.m; sourceTree = "<group>"; };
+		7DFFC2EB202EB97200743466 /* MineTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +112,11 @@
 		7DFFC2AD202EAA5500743466 /* Gitcover */ = {
 			isa = PBXGroup;
 			children = (
+				7DFFC2E8202EB94500743466 /* Nav */,
 				7DFFC2B1202EAA5500743466 /* AppDelegate.h */,
 				7DFFC2B2202EAA5500743466 /* AppDelegate.m */,
+				7DFFC2E7202EB90000743466 /* New Group */,
+				7DFFC2E1202EB8C600743466 /* Header.h */,
 				7DFFC2B4202EAA5500743466 /* ViewController.h */,
 				7DFFC2B5202EAA5500743466 /* ViewController.m */,
 				7DFFC2B7202EAA5500743466 /* Main.storyboard */,
@@ -138,6 +152,26 @@
 				7DFFC2D5202EAA5500743466 /* Info.plist */,
 			);
 			path = GitcoverUITests;
+			sourceTree = "<group>";
+		};
+		7DFFC2E7202EB90000743466 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7DFFC2E2202EB8F300743466 /* PhotoViewController.h */,
+				7DFFC2E3202EB8F300743466 /* PhotoViewController.m */,
+				7DFFC2E4202EB8F300743466 /* PhotoViewController.xib */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		7DFFC2E8202EB94500743466 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				7DFFC2E9202EB97200743466 /* MineTableViewController.h */,
+				7DFFC2EA202EB97200743466 /* MineTableViewController.m */,
+				7DFFC2EB202EB97200743466 /* MineTableViewController.xib */,
+			);
+			name = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DFFC2BE202EAA5500743466 /* LaunchScreen.storyboard in Resources */,
+				7DFFC2E6202EB8F300743466 /* PhotoViewController.xib in Resources */,
 				7DFFC2BB202EAA5500743466 /* Assets.xcassets in Resources */,
+				7DFFC2ED202EB97200743466 /* MineTableViewController.xib in Resources */,
 				7DFFC2B9202EAA5500743466 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DFFC2B6202EAA5500743466 /* ViewController.m in Sources */,
+				7DFFC2E5202EB8F300743466 /* PhotoViewController.m in Sources */,
+				7DFFC2EC202EB97200743466 /* MineTableViewController.m in Sources */,
 				7DFFC2B3202EAA5500743466 /* AppDelegate.m in Sources */,
 				7DFFC2B0202EAA5500743466 /* main.m in Sources */,
 			);
